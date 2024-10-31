@@ -1,44 +1,44 @@
 {
-  "name": "remix-hono-on-cloudflare",
-  "private": true,
-  "sideEffects": false,
-  "type": "module",
-  "scripts": {
-    "build": "remix vite:build",
-    "deploy": "pnpm run build && wrangler pages deploy",
-    "dev": "remix vite:dev",
-    "format": "pnpm biome format --write ./",
-    "lint": "pnpm biome lint ./",
-    "check": "pnpm biome check --write ./",
-    "start": "wrangler pages dev ./build/client",
-    "typecheck": "tsc",
-    "typegen": "wrangler types",
-    "preview": "pnpm run build && wrangler pages dev",
-    "cf-typegen": "wrangler types"
-  },
-  "dependencies": {
-    "@remix-run/cloudflare": "^2.13.1",
-    "@remix-run/cloudflare-pages": "^2.13.1",
-    "@remix-run/react": "^2.13.1",
-    "isbot": "^4.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@cloudflare/workers-types": "^4.20241022.0",
-    "@remix-run/dev": "^2.13.1",
-    "@types/react": "^18.2.20",
-    "@types/react-dom": "^18.2.7",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4",
-    "typescript": "^5.1.6",
-    "vite": "^5.1.0",
-    "vite-tsconfig-paths": "^4.2.1",
-    "wrangler": "3.57.1"
-  },
-  "engines": {
-    "node": ">=20.0.0"
-  }
+	"name": "remix-hono-on-cloudflare",
+	"private": true,
+	"sideEffects": false,
+	"type": "module",
+	"scripts": {
+		"build": "remix vite:build",
+		"deploy": "pnpm run build && wrangler pages deploy",
+		"dev": "remix vite:dev",
+		"format": "pnpm biome format --write ./",
+		"lint": "pnpm biome lint ./",
+		"check": "pnpm biome check --write ./",
+		"start": "wrangler pages dev ./build/client",
+		"typecheck": "tsc",
+		"typegen": "wrangler types",
+		"preview": "pnpm run build && wrangler pages dev",
+		"cf-typegen": "wrangler types"
+	},
+	"dependencies": {
+		"@remix-run/cloudflare": "^2.13.1",
+		"@remix-run/cloudflare-pages": "^2.13.1",
+		"@remix-run/react": "^2.13.1",
+		"isbot": "^4.1.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@cloudflare/workers-types": "^4.20241022.0",
+		"@remix-run/dev": "^2.13.1",
+		"@types/react": "^18.2.20",
+		"@types/react-dom": "^18.2.7",
+		"autoprefixer": "^10.4.19",
+		"postcss": "^8.4.38",
+		"tailwindcss": "^3.4.4",
+		"typescript": "^5.1.6",
+		"vite": "^5.1.0",
+		"vite-tsconfig-paths": "^4.2.1",
+		"wrangler": "3.57.1"
+	},
+	"engines": {
+		"node": ">=20.0.0"
+	}
 }
