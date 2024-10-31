@@ -17,7 +17,7 @@ export default function Index() {
 					</h1>
 					<div className="h-[144px] w-[434px]">
 						<img
-							src="/logo-light.png"
+							src="/assets/logo-light.png"
 							alt="Remix"
 							className="block w-full dark:hidden"
 						/>
